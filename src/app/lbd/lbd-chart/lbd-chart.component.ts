@@ -52,6 +52,9 @@ export class LbdChartComponent implements OnInit, AfterViewInit {
 
   @Input()
   public withHr: boolean;
+  
+  @Input()
+  public withButton: boolean;
 
   public chartId: string;
 

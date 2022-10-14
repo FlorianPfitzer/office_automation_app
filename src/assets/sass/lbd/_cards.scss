@@ -7,7 +7,7 @@
     .image{
         width: 100%;
         overflow: hidden;
-        height: 260px;
+        height: 360px;
         border-radius: $border-radius-base $border-radius-base 0 0;
         position: relative;
         -webkit-transform-style: preserve-3d;
@@ -35,13 +35,13 @@
         }
     }
     &:hover .filter{
-        @include opacity(1);
+        @include opacity(3);
     }
     .btn-hover{
         @include opacity(0);
     }
     &:hover .btn-hover{
-        @include opacity(1);
+        @include opacity(3);
     }
     .content{
         padding: 15px 15px 10px 15px;
@@ -97,11 +97,35 @@
             margin-bottom: 5px;
         }
     }
+    .footer2{
+        padding: 0;
+        background-color: $transparent-bg;
+        line-height: 30px;
+        margin: auto;
+        width: 50%;
+        align-items: center;
+        
+        .legend{
+            padding: 5px 0;
+        }
+        
+        hr{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
     .stats{
         color: #a9a9a9;
+        justify-content: center;
+        margin: auto;
     }
     .footer div{
         display: inline-block;
+        margin: auto;
+    }
+    .footer2 div{
+        display: inline-block;
+        margin: auto;
     }
 
     .author{
@@ -187,6 +211,9 @@
 .card-user,
 .card-price{
     .footer{
+        padding: 5px 15px 10px;
+    }
+    .footer2{
         padding: 5px 15px 10px;
     }
     hr{

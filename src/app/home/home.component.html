@@ -4,126 +4,129 @@
             <div class="col-md-4">
                 <lbd-chart
                   [title]="'Email Statistics'"
-                  [subtitle]="'Last Campaign Performance'"
+                  [subtitle]="'Last 7 days'"
                   [chartClass]="'ct-perfect-fourth'"
                   [chartType]="emailChartType"
                   [chartData]="emailChartData"
                   [legendItems]="emailChartLegendItems"
-                  [withHr]="true"
+                  [withHr]="false"
+                  [withButton]="false"
                   [footerIconClass]="'fa fa-clock-o'"
                   [footerText]="'Campaign sent 2 days ago'">
                 </lbd-chart>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-4">
                 <lbd-chart
-                  [title]="'Users Behavior'"
-                  [subtitle]="'24 Hours performance'"
+                  [title]="'Weekly Messaging Statistics'"
+                  [subtitle]="'Last 7 days'"
                   [chartType]="hoursChartType"
                   [chartData]="hoursChartData"
                   [chartOptions]="hoursChartOptions"
                   [chartResponsive]="hoursChartResponsive"
                   [legendItems]="hoursChartLegendItems"
-                  [withHr]="true"
+                  [withHr]="false"
+                  [withButton]="false"
                   [footerIconClass]="'fa fa-history'"
                   [footerText]="'Updated 3 minutes ago'">
                 </lbd-chart>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <lbd-chart
-                  [title]="'Office Automation Chart'"
-                  [subtitle]="'Test Module'"
+                  [title]="'Yearly Messaging Statistics'"
+                  [subtitle]="'This year'"
                   [chartType]="activityChartType"
                   [chartData]="activityChartData"
                   [chartOptions]="activityChartOptions"
                   [chartResponsive]="activityChartResponsive"
                   [legendItems]="activityChartLegendItems"
-                  [withHr]="true"
+                  [withHr]="false"
+                  [withButton]="false"
                   [footerIconClass]="'fa fa-check'"
                   [footerText]="'Data information certified'">
                 </lbd-chart>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Tasks</h4>
-                        <p class="category">Test Module</p>
+        </div>
+        <div class="row">   
+            <div class="col-md-4">
+                <div class="card card-user">
+                    <div class="image">
+                        <img src="assets/img/faces/xing_module_background.png" alt="..."/>
                     </div>
                     <div class="content">
-                        <div class="table-full-width">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox1" type="checkbox">
-                                                <label for="checkbox1">
+                        <div class="author">
+                            <a href="#">
+                                <img class="avatar border-gray" src="assets/img/faces/xing_app_delete.png" alt="..."/>
 
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>Test task 1 office automation</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox2" type="checkbox" checked>
-                                                <label for="checkbox2">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>Test task 2 office automation</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox3" type="checkbox" checked>
-                                                <label for="checkbox3">
-
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>Test task 3 office automation
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <h4 class="title">Delete Contact Requests<br />
+                                    <small>XING version</small>
+                                </h4>
+                            </a>
                         </div>
-                        <div class="footer">
-                            <hr>
+                        <p class="description text-center"> <br> Delete open contact requests <br>
+                        </p>
+                    </div>
+                    <hr>
+                        <div class="footer2">
                             <div class="stats">
-                                <i class="fa fa-history"></i> Updated 3 minutes ago
+                                <button class="btn2" mat-raised-button onClick="window.open('//google.com')">Go to module</button>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card card-user">
+                    <div class="image">
+                        <img src="assets/img/faces/xing_module_background.png" alt="..."/>
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            <a href="#">
+                                <img class="avatar border-gray" src="assets/img/faces/xing_app_followup.png" alt="..."/>
+
+                                <h4 class="title">Follow up<br />
+                                    <small>XING version</small>
+                                </h4>
+                            </a>
+                        </div>
+                        <p class="description text-center"> <br> Send personalized follow up messages <br>
+                            automatically after a defined period of time 
+                        </p>
+                    </div>
+                    <hr>
+                        <div class="footer2">
+                            <div class="stats">
+                                <button class="btn2" mat-raised-button onClick="window.open('//google.com')">Go to app</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-user">
+                    <div class="image">
+                        <img src="assets/img/faces/xing_module_background.png" alt="..."/>
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            <a href="#">
+                                <img class="avatar border-gray" src="assets/img/faces/xing_app_groupmessage.png" alt="..."/>
+
+                                <h4 class="title">Group Messaging<br />
+                                    <small>XING version</small>
+                                </h4>
+                            </a>
+                        </div>
+                        <p class="description text-center"> <br> Send personalized messages <br>
+                            to multiple contacts simultaneously 
+                        </p>
+                    </div>
+                    <hr>
+                        <div class="footer2">
+                            <div class="stats">
+                                <button class="btn2" mat-raised-button onClick="window.open('//google.com')">Go to module</button>
+                            </div>
+                        </div>
+                </div>
+            </div>           
         </div>
     </div>
 </div>

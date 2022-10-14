@@ -26,6 +26,35 @@
     
 }
 
+.btn2{
+    border-width: $border-thick;
+    background-color: $transparent-bg;
+    font-weight: $font-weight-normal;
+    margin: auto;
+    
+    @include opacity(.8);
+    padding: $padding-base-vertical $padding-base-horizontal;
+    
+    @include btn-styles($default-color, $default-states-color);
+    
+    &:hover,
+    &:focus{
+        @include opacity(1);
+        outline: 0 !important;
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+         @include box-shadow(none);
+         outline: 0 !important;
+    }
+    
+    &.btn-icon{
+        padding: $padding-base-vertical;
+    }
+    
+}
+
 // Apply the mixin to the buttons
 //.btn-default { @include btn-styles($default-color, $default-states-color); }
 .btn-primary { @include btn-styles($primary-color, $primary-states-color); }
